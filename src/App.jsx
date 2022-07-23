@@ -1,13 +1,19 @@
+import { Routes, Route } from 'react-router-dom';
+
 import GrowthChart from './components/GrowthChart';
+import UserLayout from './layout/User';
+
 import './App.scss';
-import Sidebar from './components/Sidebar';
-import Topbar from './components/Topbar';
+
 function App() {
   return (
     <div className="App">
-      <GrowthChart height="300" width="800"/>
-      <Sidebar></Sidebar>
-      <Topbar></Topbar>
+      {/* <GrowthChart height="300" width="800"/> */}
+      <Routes >
+        <Route path="/" element={<UserLayout />} >
+          <Route path="/test" element={<GrowthChart height="300" width="800"/>} />
+        </Route>
+      </Routes>
     </div>
   );
 }

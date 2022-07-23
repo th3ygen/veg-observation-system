@@ -1,0 +1,25 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 100vh;
+    width: fit-content;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 300px;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.content {
+    position: relative;
+    margin-left: 300px;
+
+    width: calc(100% - 300px);
+    height: 100%;
+}
