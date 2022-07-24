@@ -1,13 +1,12 @@
 .topbar{
-    width:calc(100% - 300px);
-    height: 200px;
+    width: 100%;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px;
-    background-color: #054B1A;
+    background-color: #5edd84;
     color: #F3F3E7;
-    border-radius: 0% 50px 0% 0%;
     flex-direction: column;
     justify-content: flex-start;
 }

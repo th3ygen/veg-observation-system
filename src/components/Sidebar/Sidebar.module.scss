@@ -1,55 +1,84 @@
 .sidebar{
     width:300px;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px;
     background-color: #054B1A;
     color: #F3F3E7;
-    border-radius: 0% 50px 0% 0%;
     flex-direction: column;
     justify-content: flex-start;
+    border-radius: 20px;
 }
 
-.logoCard{
-    width: 100%;
-    height: 6vh;
-    border: solid 1px #B7D35D;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.box{
+
+    width:100%;
+    padding: 20px;
+    
+    .logoCard{
+        width: 100%;
+        height: fit-content;
+        border: solid 3px #B7D35D;
+        border-radius: 0 40% 0 40%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(5deg);
+
+        box-shadow: 10px 10px 2px 1px #c4f39d;
+    
+        .logo{
+            width: 100%;
+            padding: 15px 10px;
+            font-weight: bolder;
+            font-size: 30px;
+            transform: rotate(-5deg);
+            display: flex;
+            justify-content: center;
+
+            
+
+            .img{
+                width: 8vw;
+            }
+            
+        }
+    
+    }
+    
 }
 
-.logo{
-    width: 30%;
-    height: 92%;
-    background-color: #F3F3E7;
-}
 
 .navlist{
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+
+    .sideContent.active {
+        background: #F3F3E7;
+        color: #054B1A;
+        border-radius: 5px;
+        height: fit-content
+    }
+    
+    .sideContent{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+
+        .sideIcon{
+            width: 20%;
+        }
+    }
+    
+   
 }
 
-.sideContent.active {
-    background: #F3F3E7;
-    color: #054B1A;
-    border-radius: 5px;
-    height: fit-content
-}
-
-.sideContent{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    padding: 10px;
-    gap: 10px;
-}
-
-.sideIcon{
-    width: 20%;
-}

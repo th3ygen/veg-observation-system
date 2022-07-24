@@ -1,3 +1,29 @@
+.page{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+
+    .pageCont1{
+        display:flex;
+        flex: 0 1 auto;
+    }
+
+    .pageCont2{
+        display:flex;
+        flex: 4 1 auto;
+
+        background-color: aqua;
+    }
+
+    .pageCont3{
+        display:flex;
+        flex: 2 1 auto;
+
+        background-color: #bad7f2;
+    }
+}
+
+
 .sidebar {
     position: fixed;
     left: 0;
@@ -12,14 +38,10 @@
     top: 0;
     left: 300px;
 
-    width: fit-content;
+    width: 100%;
     height: fit-content;
 }
 
 .content {
-    position: relative;
-    margin-left: 300px;
 
-    width: calc(100% - 300px);
-    height: 100%;
 }

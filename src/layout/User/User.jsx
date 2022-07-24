@@ -7,14 +7,17 @@ import styles from './User.module.scss';
 
 export default function User() {
     return <>
-        <div className={styles.sidebar} >
-            <Sidebar />
+        <div className={styles.page}>
+            <div className={styles.pageCont1} >
+                <Sidebar />
+            </div>
+            <div className={styles.pageCont2} >
+                
+            </div> 
+            <div className={styles.pageCont3} >
+                
+            </div>
         </div>
-        {/* <div className={styles.topbar} >
-            <Topbar />
-        </div> */}
-        <div className={styles.content} >
-            <Outlet />
-        </div>
+        
     </>
 }
