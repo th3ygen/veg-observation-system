@@ -12,11 +12,14 @@ export default function User() {
                 <Sidebar />
             </div>
             <div className={styles.pageCont2} >
-                
+                <div className={styles.boxTop}>
+                    <Topbar />
+                </div>
+                <div className={styles.boxCont}>
+                    
+                </div>
             </div> 
-            <div className={styles.pageCont3} >
-                
-            </div>
+            
         </div>
         
     </>

@@ -1,47 +1,53 @@
 .page{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
 
     .pageCont1{
         display:flex;
         flex: 0 1 auto;
+
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+        
+            height: 100vh;
+            width: fit-content;
+        }
     }
 
     .pageCont2{
+        height: 90vh;
         display:flex;
-        flex: 4 1 auto;
+        flex: 5 1 auto;
 
-        background-color: aqua;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .boxTop{
+            width: 100%;
+            height: fit-content;
+            padding: 0 20px;
+            border-radius: 20px;
+            background-color: lightgrey;
+        }
+
+        .boxCont{
+            width: 100%;
+            height: calc(100vh - 100px - 60px);
+            padding: 20px 20px;
+            border-radius: 10px;
+            background-color: lightgrey;
+        }
+
     }
 
-    .pageCont3{
-        display:flex;
-        flex: 2 1 auto;
-
-        background-color: #bad7f2;
-    }
+    
 }
 
 
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
 
-    height: 100vh;
-    width: fit-content;
-}
 
-.topbar {
-    position: fixed;
-    top: 0;
-    left: 300px;
-
-    width: 100%;
-    height: fit-content;
-}
-
-.content {
-
-}
