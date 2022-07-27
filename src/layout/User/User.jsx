@@ -16,7 +16,7 @@ export default function User() {
                     <Topbar />
                 </div>
                 <div className={styles.boxCont}>
-                    
+                    <Outlet />
                 </div>
             </div> 
             
